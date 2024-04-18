@@ -1,0 +1,47 @@
+.page-indicator {
+    position: fixed;
+    top: 60%;
+    right: 8rem;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    z-index: 1;
+}
+
+.indicator-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #f06c52;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for size change */
+}
+
+.indicator-dot.active {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 3px solid #f06c52;
+    transition: all 0.3s ease; /* Smooth transition for size change */
+    animation: rotateIndicator 0.3s ease forwards; /* Rotate animation for active state */
+}
+.white-dot {
+    background-color: white !important; /* Change the color to white */
+  }
+
+@keyframes rotateIndicator {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+}
+@media only screen and (max-width: 768px) {
+    .page-indicator {
+      display: none;
+    }
+  }
+  
