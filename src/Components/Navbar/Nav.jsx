@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Nav.css'
+import { NavLink } from 'react-router-dom';
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showLogo, setShowLogo] = useState(true);
@@ -64,7 +65,7 @@ const Nav = () => {
           <ul className='leading-[3rem]'>
             <li className="transition-colors duration-300 relative group z-20 flex items-center cursor-pointer w-fit">
               <span className="group-hover:bg-blue-400/30 w-5 h-5 -right-3 absolute transition-all duration-300"></span>
-              My Work
+              <NavLink to={'/work'}>My Work</NavLink>
             </li>
 
             <li className="transition-colors duration-300 relative group z-20 flex items-center cursor-pointer w-fit">
