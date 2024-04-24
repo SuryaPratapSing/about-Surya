@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Section = () => {
     return (
@@ -8,7 +9,7 @@ const Section = () => {
                     <div className='h-fit'>
                         <h1 className='font-extrabold text-3xl md:text-5xl text-[#4731d4] '>I build & <br />design stuff</h1>
                         <p className='md:text-2xl font-light mt-10'>Open source <br /> projects, web apps<br /> and experimentals.</p>
-                        <button className='py-2 md:py-4 px-6 md:px-16 flex gap-5 border border-[#4731d4] rounded mt-10 items-center text-xs md:text-sm font-semibold text-[#4731d4] hover:bg-[#4731d4] hover:text-white transition-all duration-300 ease-in-out'>SEE MY WORKS <i class="fa-solid fa-arrow-right-long text-xl"></i></button>
+                        <Link to={'/work'}><button className='py-2 md:py-4 px-6 md:px-16 flex gap-5 border border-[#4731d4] rounded mt-10 items-center text-xs md:text-sm font-semibold text-[#4731d4] hover:bg-[#4731d4] hover:text-white transition-all duration-300 ease-in-out'>SEE MY WORKS <i class="fa-solid fa-arrow-right-long text-xl"></i></button></Link>
 
                     </div>
                 </div>
@@ -17,7 +18,7 @@ const Section = () => {
                         <h1 className='font-extrabold text-3xl md:text-5xl text-[#4731d4] '>I write,<br /> sometimes</h1>
                         <p className='md:text-2xl font-light mt-10'>About design,
                             <br /> frontend dev,<br /> learning and life.</p>
-                        <button className='py-2 md:py-4 px-6 md:px-16 flex gap-5 border border-[#4731d4] rounded mt-10 items-center text-xs md:text-sm font-semibold text-[#4731d4] hover:bg-[#4731d4] hover:text-white transition-all duration-300 ease-in-out'>READ MY ARTICLES <i class="fa-solid fa-arrow-right-long text-xl"></i></button>
+                            <Link to={'/self'}><button className='py-2 md:py-4 px-6 md:px-16 flex gap-5 border border-[#4731d4] rounded mt-10 items-center text-xs md:text-sm font-semibold text-[#4731d4] hover:bg-[#4731d4] hover:text-white transition-all duration-300 ease-in-out'>READ MY ARTICLES <i class="fa-solid fa-arrow-right-long text-xl"></i></button></Link>
 
                     </div>
                 </div>
