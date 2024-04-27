@@ -40,7 +40,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className='border-t text-[#BADD76] border-[#8bb339] mt-32 w-full h-32 flex justify-between items-center'>
-                    <p>© surya 2024 rights reserved</p>
+                    <p>© surya 2024 all rights reserved</p>
                     <ul className='md:flex gap-8 text-lg hidden'>
                     <li className="transition-colors duration-300 relative group z-20 flex items-center cursor-pointer w-fit">
                             <span className="group-hover:bg-zinc-100/30 w-5 h-5 -right-3 absolute transition-all duration-300"></span>
