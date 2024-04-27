@@ -45,7 +45,7 @@ const Work = () => {
     }
   ]
   return (
-    <div className='w-full h-auto bg-gray-100 py-32'>
+    <div className='w-full h-auto bg-gray-100 py-24'>
       <div className='w-4/5 m-auto h-full mt-32'>
         <h2 className='text-4xl font-semibold text-gray-600 text-center'><span className='text-gray-500'>/</span>work<span className='text-gray-500'>.</span></h2>
         <p className='text-center text-lg mt-5 font-light'>Selected work I've taken on in the past.</p>
